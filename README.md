@@ -72,7 +72,11 @@ The app server is run in http mode (not https) behind the reverse proxy as OLS d
 ### Install
 
 ```shell
-git clone git@github.com:therealgilles/checkin_app_public.git
+git clone git@github.com:therealgilles/checkin_app.git
+cd checkin-app
+npm install
+cd launcher
+npm install
 ```
 
 then proceed to create a configuration file and add a favicon file (see [Configuration](#configuration)).
@@ -90,7 +94,7 @@ A favicon file should be installed under [checkin-app/app/public/](checkin-app/a
 The backend is a node [Express](https://expressjs.com/) server communicating with the front-end through websockets.
 It uses a persistent Redis database, OAuth authentication, and multiple APIs such as [WooCommerce](https://woocommerce.github.io/woocommerce-rest-api-docs/) and [Google Sheets](https://developers.google.com/sheets/api). It uses [Razzle](https://razzlejs.org/) to make the app universal (with server-side rendering).
 
-The front-end is based on [create-react-app](https://create-react-app.dev/) and uses [redux](https://redux.js.org/) and [rxjs](https://rxjs.dev/) through [redux-logic](https://github.com/jeffbski/redux-logic), as well as [Semantic UI React](https://react.semantic-ui.com/) for its UI elements.
+The front-end is based on [create-react-app](https://create-react-app.dev/) and uses [redux](https://redux.js.org/) and [rxjs](https://rxjs.dev/) through [redux-logic](https://github.com/jeffbski/redux-logic), as well as [Semantic UI React](https://react.semantic-ui.com/) and [Fomantic UI](http://github.com/fomantic/Fomantic-UI/) for its UI elements. A distribution of Fomantic UI is installed under [checkin-app/app/src/semantic-ui/](checkin-app/app/src/semantic-ui/) due to some compatibility issues with Semantic UI React.
 
 The server relies on the WNH/SATS websites being properly setup to communicate. This setup is beyond the scope of this document. It includes:
 
