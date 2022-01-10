@@ -72,7 +72,7 @@ The app server is run in http mode (not https) behind the reverse proxy as OLS d
 ### Install
 
 ```shell
-git clone git@github.com:therealgilles/checkin_app.git
+git clone git@github.com:therealgilles/checkin_app_public.git
 cd checkin-app
 npm install
 cd launcher
