@@ -1,0 +1,21 @@
+{
+  "eslint.codeActionsOnSave.mode": "problems",
+  "prettier.semi": false,
+  "javascript.format.semicolons": "remove",
+  "typescript.format.semicolons": "remove",
+  "prettier.arrowParens": "avoid",
+  "prettier.requireConfig": true,
+  "prettier.singleQuote": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "prettier.ignorePath": "./.prettierignore",
+  "search.exclude": {
+    "*.min.css": true,
+    "**/build": true,
+    "**/cache": true
+  },
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact", "graphql"],
+  "eslint.options": {
+    "extentions": [".js", ".graphql"]
+  }
+} // Place your settings in this file to overwrite default and user settings.

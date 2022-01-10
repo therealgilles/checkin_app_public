@@ -1,0 +1,306 @@
+/*.pusher {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}*/
+
+.pusher.dimmed {
+  min-height: 100vh;
+}
+
+.pusher .ui.teal.button {
+  height: 2.89em;
+  padding: 0.67em !important;
+}
+
+.pusher .ui.teal.button:hover, .pusher .ui.teal.buttons .button:hover,
+.pusher .ui.teal.button:active, .pusher .ui.teal.buttons .button:active,
+.pusher .ui.teal.button:focus, .pusher .ui.teal.buttons .button:focus {
+  /* background-color: #00b5ad; */
+  background-color: hsla(177, 100%, 30%, 1);
+  color: #fff;
+}
+
+.pushable:not(body)>.fixed, .pushable:not(body)>.pusher:after, .pushable:not(body)>.ui.sidebar {
+  position: fixed;
+}
+
+.ui.attached.button.sidebar-menu-icon {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 103;
+  padding-left: 0.785714em;
+  border-radius: 0;
+  box-shadow: none !important;
+}
+
+.ui.attached.button.sidebar-menu-icon>.icon {
+  opacity: 1;
+}
+
+.ui.cards>.card, .ui.segments {
+  box-shadow: none !important;
+  border: 1px solid rgba(34,36,38,.2) !important;
+}
+
+.ui.segment {
+  border-color: rgba(34,36,38,.2) !important;
+}
+
+.ui.items>.item>.image img {
+  border-radius: 500rem; /* fix instructor image border radius */
+}
+
+.ui.items>.item>.image {
+  margin-top: auto; /* fix instructor image vertical margins */
+  margin-bottom: auto;
+}
+
+.ui.small.image, .ui.small.images .image, .ui.small.images img, .ui.small.images svg {
+  width: 110px;
+}
+
+@media only screen and (max-width: 767px) {
+  .ui.items:not(.unstackable)>.item {
+    margin: 0;
+  }
+}
+
+/* This breaks window.scrollY */
+/* .scrollArea {
+  height: 100vh;
+} */
+
+@media only screen and (min-width: 768px) {
+  .ui.container.grid {
+    width: 100% !important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .ui.container.grid-container, .ui.container.grid-container-wide {
+    margin-left: 2rem !important;
+    margin-right: 2rem !important;
+    width: unset !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .ui.container.grid-container, .ui.container.grid-container-wide, .ui.container {
+    margin-left: .5rem !important;
+    margin-right: .5rem !important;
+    width: unset !important;
+  }
+}
+
+@media only screen and (min-width: 1030px) {
+  .ui.container.grid-container {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: 970px !important;
+  }
+}
+
+@media only screen and (min-width: 1330px) {
+  .ui.container.grid-container-wide {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: 1270px !important;
+  }
+}
+
+.icon-button {
+  cursor: pointer;
+}
+
+.custom-loader:empty:before {
+  content: ' ';
+  position: absolute;
+  top: calc(50% - 2em);
+  left: calc(50%);
+  width: 3.42857143rem;
+  height: 3.42857143rem;
+  margin: 0 0 0 -1.71428571rem;
+  border: .2em solid rgba(0, 0, 0, 0.1);
+  border-left: .2em solid #767676;
+  border-radius: 50%;
+  animation: loader .6s linear;
+  animation-iteration-count: infinite;
+  z-index: 3;
+}
+.custom-loader:empty {
+  position: fixed;
+  top: -.5em;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+}
+.custom-loader:empty:after {
+  position: absolute;
+  top: calc(50%);
+  left: calc(50% - 2.2em);
+  display: block;
+  text-align: center;
+  font-size: 1.14285714em;
+  padding-top: 1.8rem;
+  content: 'Loading...';
+}
+
+@keyframes load8 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* .custom-loader:empty:before {
+  width: 3.42857143rem;
+  height: 3.42857143rem;
+  margin: 0 0 0 -1.71428571rem;
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 50%;
+  border-radius: 500rem;
+  border: .2em solid rgba(0,0,0,.1);
+}
+.custom-loader:empty {
+  z-index: 3;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 3.42857143rem;
+  padding-top: 4.21428571rem;
+  padding-bottom: 27px;
+  margin: 0;
+  font-size: 1.14285714em;
+  width: auto !important;
+  height: auto !important;
+  text-align: center;
+  font-style: normal;
+}
+.custom-loader:empty:after {
+  width: 3.42857143rem;
+  height: 3.42857143rem;
+  margin: 0 0 0 -1.71428571rem;
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 50%;
+  animation: loader .6s linear;
+  animation-iteration-count: infinite;
+  border-radius: 500rem;
+  border-color: #767676 transparent transparent;
+  border-style: solid;
+  border-width: .2em;
+  box-shadow: 0 0 0 1px transparent;
+} */
+
+.ui.dimmer {
+  background-color: rgba(0,0,0,0.5);
+}
+.ui.button.basic.tertiary, .ui.button.basic.tertiary:hover, .ui.button.basic.tertiary:focus {
+  box-shadow: 0 0 !important;
+}
+
+.ui.basic.modal.refresh-modal {
+  background-color: rgba(20, 20, 20, 0.8);
+  text-align: center;
+  border-radius: 5px;
+  font-size: 100%;
+  width: auto;
+}
+
+.ui.basic.modal.refresh-modal .content {
+  padding: 10px 5px 10px 25px;
+}
+
+.ui.basic.modal.refresh-modal .refresh-button {
+  margin-right: 0;
+  color: #3ea3f0 !important;
+}
+
+.ui.basic.modal.refresh-modal .refresh-button:hover,
+.ui.basic.modal.refresh-modal .refresh-button:active {
+  background-color: inherit !important;
+}
+
+.ui.dimmer > .ui.basic.modal.refresh-modal {
+  color: #fff;
+}
+
+/*
+// Semantic UI has these classes, however they're only applicable to
+// grids, containers, rows and columns.
+// plus, there isn't any `mobile hidden`, `X hidden` class.
+// this snippet is using the same class names and same approach
+// plus a bit more but to all elements.
+//
+// see https://github.com/Semantic-Org/Semantic-UI/issues/1114
+*/
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+  [class*="mobile screen-hidden"],
+  [class*="tablet screen-only"]:not(.mobile),
+  [class*="computer screen-only"]:not(.mobile),
+  [class*="large screen screen-only"]:not(.mobile),
+  [class*="widescreen screen-only"]:not(.mobile),
+  [class*="or lower screen-hidden"] {
+    display: none !important;
+  }
+}
+
+/* Tablet / iPad Portrait */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  [class*="mobile screen-only"]:not(.tablet),
+  [class*="tablet screen-hidden"],
+  [class*="computer screen-only"]:not(.tablet),
+  [class*="large screen screen-only"]:not(.tablet),
+  [class*="widescreen screen-only"]:not(.tablet),
+  [class*="or lower screen-hidden"]:not(.mobile) {
+    display: none !important;
+  }
+}
+
+/* Computer / Desktop / iPad Landscape */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  [class*="mobile screen-only"]:not(.computer),
+  [class*="tablet screen-only"]:not(.computer),
+  [class*="computer screen-hidden"],
+  [class*="large screen screen-only"]:not(.computer),
+  [class*="widescreen screen-only"]:not(.computer),
+  [class*="or lower screen-hidden"]:not(.tablet):not(.mobile) {
+    display: none !important;
+  }
+}
+
+/* Large Monitor */
+@media only screen and (min-width: 1200px) and (max-width: 1919px) {
+  [class*="mobile screen-only"]:not([class*="large screen"]),
+  [class*="tablet screen-only"]:not([class*="large screen"]),
+  [class*="computer screen-only"]:not([class*="large screen"]),
+  [class*="large screen screen-hidden"],
+  [class*="widescreen screen-only"]:not([class*="large screen"]),
+  [class*="or lower screen-hidden"]:not(.computer):not(.tablet):not(.mobile) {
+    display: none !important;
+  }
+}
+
+/* Widescreen Monitor */
+@media only screen and (min-width: 1920px) {
+  [class*="mobile screen-only"]:not([class*="widescreen"]),
+  [class*="tablet screen-only"]:not([class*="widescreen"]),
+  [class*="computer screen-only"]:not([class*="widescreen"]),
+  [class*="large screen screen-only"]:not([class*="widescreen"]),
+  [class*="widescreen screen-hidden"],
+  [class*="widescreen or lower screen-hidden"] {
+    display: none !important;
+  }
+}

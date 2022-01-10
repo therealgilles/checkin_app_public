@@ -1,0 +1,14 @@
+{
+  "presets": [
+    "razzle/babel" // NEEDED
+  ],
+  "plugins": [
+    // additional babel plugins
+    [
+      "transform-semantic-ui-react-imports",
+      {
+        "importType": "commonjs"
+      }
+    ]
+  ]
+}

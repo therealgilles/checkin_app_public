@@ -1,0 +1,140 @@
+.datepicker .DateRangePicker_picker {
+  z-index: 4;
+}
+
+.datepicker .DateInput_fang {
+  z-index: 5;
+}
+
+.datepicker .DateRangePicker_picker_18r6hgw-o_O-DateRangePicker_picker__directionLeft_1xksua0,
+.datepicker ._1dtfa3tf {
+  top: 56px !important;
+}
+
+.datepicker .DateRangePickerInput_calendarIcon_15s124x,
+.datepicker ._15s124x {
+  padding: 4px !important;
+  margin-bottom: 3px !important;
+}
+
+.datepicker .DateInput_4z7e5d,
+.datepicker ._4z7e5d {
+  width: 100px !important;
+}
+
+.datepicker .DateRangePickerInput_arrow_mfgyvi,
+.datepicker ._mfgyvi {
+  margin-right: 7px;
+}
+
+.datepicker .DateInput_4z7e5d input,
+.datepicker ._4z7e5d input {
+  padding-bottom: 4px !important;
+  padding-top: 8px !important;
+  font-weight: 300;
+  padding-left: 2px !important;
+  padding-right: 2px !important;
+}
+
+.datepicker ._1iti0ju,
+.datepicker .DateRangePickerInput_arrow_1iti0ju {
+  padding-right: 6px;
+}
+
+.datepicker svg {
+  top: 46px !important;
+}
+
+.datepicker .DateRangePicker_picker {
+  top: 56px !important;
+}
+
+.datepicker > div > div > div:nth-child(2) {
+  top: calc(37px + 10px) !important;
+}
+
+.datepicker-segment {
+  width: 100% !important;
+  margin: -1px 0 0 0 !important;
+}
+
+/* .datepicker .ui.button.today-button {
+  padding: 8px 15px !important;
+  margin-bottom: 15px;
+  height: auto !important;
+}
+
+.datepicker .DayPicker_ngarnq-o_O-DayPicker__horizontal_14cfb9u-o_O-DayPicker__withBorder_19urp5m {
+  text-align: center !important;
+} */
+
+.get-all-data-segment,
+.refresh-all-data-segment {
+  text-align: center !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  font-weight: bold;
+}
+
+.get-all-data-segment i.icon,
+.refresh-all-data-segment i.icon {
+  /* background-color: #e8e8e8;
+  border-radius: 0.2em;
+  padding: 0.5em; */
+  color: rgba(0, 0, 0, 0.6);
+  box-shadow: none;
+}
+
+.get-all-data-segment .refresh-div,
+.refresh-all-data-segment .refresh-div {
+  background-color: #e8e8e8;
+  border-radius: 0.2em;
+  /* padding: 0.5em; */
+}
+
+.get-refresh-data-segment {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.get-refresh-data-segment,
+.registrants-segment,
+.users-segment {
+  /* box-shadow: none !important; */
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.registrants-basic-segment,
+.users-basic-segment {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.ui.loading.segment {
+  color: inherit !important;
+}
+
+.settings-checkbox .ui.checkbox label {
+  font-size: 130%;
+  padding-bottom: 0.6em;
+}
+
+.settings-checkbox-placeholder {
+  font-size: 130%;
+}
+
+.ui.dropdown.skip-unused-users-dropdown {
+  margin-left: 5px;
+  font-size: 130%;
+  line-height: 0.5;
+}
+
+.ui.dropdown.skip-unused-users-dropdown > .text {
+  font-weight: 400;
+}
+
+.ui.dropdown.skip-unused-users-dropdown .menu > .item {
+  font-size: 100%;
+}

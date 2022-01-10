@@ -1,0 +1,12 @@
+.order-status {
+  display: inline-block;
+}
+
+.order-status-popup {
+  font-size: 100% !important;
+}
+
+.order-status-icon {
+  display: inline-block;
+  vertical-align: sub !important;
+}

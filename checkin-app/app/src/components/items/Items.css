@@ -1,0 +1,33 @@
+.class-started-button,
+.item-button {
+  filter: brightness(98%) hue-rotate(5deg);
+}
+
+.ui.button.item-button {
+  font-weight: 400;
+  line-height: 1.5em;
+  font-size: 110%;
+}
+
+.ui.card .content .item-description img {
+  display: none;
+}
+
+.ui.card .content .item-description {
+  margin-left: 1em;
+  margin-right: 1em;
+  font-size: 85%;
+}
+
+.ui.grid > .row.item-description {
+  padding-top: 0;
+}
+
+.ui.items > .item .extra.item-extra {
+  display: flex;
+  align-items: center;
+}
+
+.ui.items > .item .extra.item-extra .ui.label {
+  padding: 0.6em 0.833em 0.4em;
+}

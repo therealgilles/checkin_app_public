@@ -1,0 +1,21 @@
+.ui.icon.input.search-box > i.icon {
+  width: 1.5em;
+}
+
+.ui.icon.input.search-box > i.circular.icon {
+  width: 1.65em !important;
+  height: 1.65em !important;
+}
+
+.ui.icon.input.search-box > i.circular.icon:before {
+  margin-top: -.45em;
+}
+
+.ui.icon.input.search-box > input:not(:placeholder-shown) {
+  box-shadow: 0 0 0 2pt #317cd9;
+}
+
+.ui.icon.input.search-box > input:not(:placeholder-shown) + i.circular.icon {
+  box-shadow: 0 0 0 0.1em #317cd9 inset;
+  color: #317cd9;
+}

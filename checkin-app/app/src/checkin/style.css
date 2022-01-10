@@ -1,0 +1,23 @@
+.ui.ui.ui.ui.massive.button.check-in-button {
+  filter: brightness(98%) hue-rotate(10deg);
+  font-size: 1.5em;
+  font-weight: 300;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.ui.ui.ui.ui.huge.button.check-in-button {
+  font-size: 1.25em;
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+}
+
+@media only screen and (max-width: 767px) {
+  .ui.button.check-in-button {
+    margin-top: 1rem;
+  }
+}
+
+.ui.button.check-in-button {
+  margin-right: 0;
+}

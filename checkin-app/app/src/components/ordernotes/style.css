@@ -1,0 +1,34 @@
+.order-notes-accordion div {
+  color: rgba(0,0,0,.6) !important;
+}
+
+.order-notes-accordion .title {
+  padding: 0 !important;
+}
+
+.order-notes-accordion > .content {
+  padding-top: 0 !important;
+  padding-left: 1.5em !important;
+}
+
+.order-notes-accordion > .content i.icon {
+  vertical-align: text-top !important;
+}
+
+.order-notes-accordion > .content i.circle.icon {
+  padding-top: 7.5px !important;
+}
+
+.order-notes-accordion > .content i.close.icon {
+  cursor: pointer;
+  padding-top: 5px !important;
+}
+
+.order-notes-accordion > .content i.close.icon:hover {
+  color: red;
+}
+
+.order-notes-accordion > .content i.mini.icon {
+  padding-left: 2px !important;
+  padding-right: 0 !important;
+}

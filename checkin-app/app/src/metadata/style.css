@@ -1,0 +1,13 @@
+.metadata {
+  display: inline-block;
+  margin-right: 1em !important;
+}
+
+.id-card-popup {
+  font-size: 100% !important;
+}
+
+.id-card-icon {
+  display: inline-block;
+  vertical-align: sub !important;
+}

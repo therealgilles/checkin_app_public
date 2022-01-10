@@ -1,0 +1,64 @@
+# Add any directories, files, or patterns you don't want to be tracked by version control
+
+# dependencies
+/node_modules
+node_modules/
+/.npm
+.npm/
+
+# testing
+/coverage
+**/coverage
+
+# production
+/build
+build/
+
+# cache
+/cache
+cache/
+
+# redis data
+./data
+/data
+
+# config
+*/config/config.js
+*/config/config.mjs
+*/config/config.wnh.mjs
+*/config/config.sats.mjs
+
+# favicon
+*/public/favicon.ico
+
+# tokens/credentials
+*token.json
+*credentials.json
+
+# ssl
+*/server/src/keys/
+*.pem
+*.key
+*.srl
+*.crt
+*.csr
+*.ext
+.htaccess
+
+# ssh
+.myssh/
+
+# notes
+docker_commands.txt
+droplet_notes.txt
+ssl_commands.txt
+
+# misc
+.DS_Store
+.env*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+*.saved
+.eslintcache

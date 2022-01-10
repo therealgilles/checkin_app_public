@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "baseUrl": "node_modules",
+    "paths": {
+      "AppSrc": ["../app/src"],
+      "ServerSrc": ["../server/src"],
+      "Config": ["../config"]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "**/build/*",
+    "**/cache/*",
+    "**/.vscode*/*",
+    "**/semantic-ui",
+    "**/package-lock.json"
+  ]
+}

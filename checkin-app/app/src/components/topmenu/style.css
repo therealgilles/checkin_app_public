@@ -1,0 +1,20 @@
+.top-menu {
+  height: 3.19em;
+  font-size: 125% !important;
+}
+
+.top-menu .top-menu-title {
+  font-size: 1.35em;
+  line-height: 1em;
+}
+
+@media only screen and (min-width: 568px) {
+  .top-menu .top-menu-title {
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+}
+
+.ui.menu.fixed.top-menu {
+  z-index: 103;
+}

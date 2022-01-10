@@ -1,0 +1,29 @@
+.order-refunds-accordion div {
+  color: rgba(0,0,0,.6) !important;
+}
+
+.order-refunds-accordion .title {
+  padding: 0 !important;
+}
+
+.order-refunds-accordion > .content {
+  padding-top: 0 !important;
+  padding-left: 1.5em !important;
+}
+
+.order-refunds-accordion > .content i.icon {
+  vertical-align: text-top !important;
+  padding-top: 8px !important;
+}
+
+.order-refunds-accordion > .content i.close.icon {
+  cursor: pointer;
+}
+.order-refunds-accordion > .content i.close.icon:hover {
+  color: red;
+}
+
+.order-refunds-accordion > .content i.mini.icon {
+  padding-left: 2px !important;
+  padding-right: 1em !important;
+}

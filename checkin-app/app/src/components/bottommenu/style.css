@@ -1,0 +1,12 @@
+.ui.menu.bottom-menu .item:before {
+  width: 0; /* remove menu splitting bars */
+}
+
+.ui.button.another-class-button {
+  filter: brightness(98%) hue-rotate(10deg);
+  font-weight: 300;
+}
+
+.bottom-menu {
+  font-size: 125% !important;
+}

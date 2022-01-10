@@ -1,0 +1,31 @@
+{
+  "apps": [
+    {
+      "name": "server",
+      "script": "./build/server.js",
+      "node_args": "",
+      "merge_logs": true,
+      "max_restarts": 20,
+      "instances": 1,
+      "max_memory_restart": "300M",
+      "env_production_local_testing": {
+        "NODE_ENV": "production",
+        "CONFIG_MODE": "development",
+        "PORT_HTTP": "8888",
+        "PORT_HTTPS": "8443",
+        "CLIENT_HOST_PORT": "8443",
+        "NODE_STREAM": "true"
+      },
+      "env_production": {
+        "NODE_ENV": "production",
+        "NO_SSL": "true",
+        "PORT_HTTP": "8080",
+        "HOST": "checkin.wednesdaynighthop.com",
+        "USE_PROXY": "true",
+        "NODE_STREAM": "true",
+        "DEBUG": "true",
+        "TESTING": "true"
+      }
+    }
+  ]
+}

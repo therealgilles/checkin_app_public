@@ -1,0 +1,58 @@
+.attendance-table.ui.compact.table {
+  display: inline-block;
+  margin: 0;
+}
+
+.attendance-table.ui.compact.table td {
+  width: 2.13em;
+  height: 2.13em;
+}
+
+.attendance-table.ui.compact.table td.attendance-markers {
+  padding: 0;
+}
+
+.attendance-table.ui.compact.table td.attendance-markers:last-child {
+  border-right: none;
+}
+
+.attendance-table.ui.compact.table td i.icon {
+  margin: 0;
+}
+
+.attendance-table.ui.table tbody tr td.selectable > a:not(.ui) {
+  display: inline-block;
+  padding: 0;
+}
+
+.attendance-markers button {
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding: 0;
+  vertical-align: middle;
+  background: transparent;
+  cursor: pointer;
+  color: inherit;
+}
+
+.attendance-markers button:focus {
+  outline: 0;
+}
+
+/* .attendance-markers:hover button {
+  background: transparent;
+} */
+
+.item-labels .ui.label {
+  padding: 0.6233em 0.833em 0.5233em;
+}
+
+.item-labels .ui.label.item-label-button {
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.week-numbers {
+  display: inline-block;
+  padding-top: 3px;
+}

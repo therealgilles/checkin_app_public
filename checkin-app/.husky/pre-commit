@@ -1,0 +1,2 @@
+cd checkin-app
+npx --no-install lint-staged

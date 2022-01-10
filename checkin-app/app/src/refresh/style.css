@@ -1,0 +1,7 @@
+.refresh-circular-button {
+  cursor: pointer;
+}
+
+.ui.label>.icon.fitted {
+  margin: 0;
+}

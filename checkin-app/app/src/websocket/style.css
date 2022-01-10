@@ -1,0 +1,6 @@
+.ui.label.ws-indicator {
+  position: fixed;
+  top: 0.7rem;
+  right: 1rem;
+  z-index: 103;
+}

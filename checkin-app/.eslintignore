@@ -1,0 +1,8 @@
+.eslint*
+**/node_modules
+**/.vscode*
+**/express-sslify
+**/semantic-ui
+**/semantic-ui/**
+.prettier*
+jsconfig.json

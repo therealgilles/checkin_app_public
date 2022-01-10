@@ -1,0 +1,69 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "airbnb",
+    "react-app",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "prettier",
+    "prettier/@typescript-eslint",
+    "prettier/babel",
+    "prettier/flowtype",
+    "prettier/react"
+  ],
+  "plugins": [
+    "prefer-object-spread",
+    "react",
+    "jsx-a11y",
+    "import"
+  ],
+  "settings": {
+    "import/resolver": {"node": { "extensions": [".js", ".mjs"]}},
+    "react": {
+      "version": "16.8.6"
+    }
+  },
+  "rules": {
+    "prefer-object-spread/prefer-object-spread": 2,
+    "react/jsx-filename-extension": 0,
+    "react/prefer-stateless-function": 0,
+    "react/sort-comp": 0,
+    "no-use-before-define": 0,
+    "no-underscore-dangle": 0,
+    "import/no-unresolved": [2, { "ignore": ["react"] }],
+    "no-unused-expressions": ["error", { "allowShortCircuit": true, "allowTernary": true }],
+    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
+    "no-mixed-operators": ["error", {"allowSamePrecedence": true }],
+    "arrow-body-style": ["warn", "as-needed"],
+    "max-len": ["warn", 150],
+    "object-curly-newline": 0,
+    "prefer-destructuring": ["error", {"object": false, "array": false}],
+    "react/destructuring-assignment": 0,
+    "react/no-access-state-in-setstate": 0,
+    "react/jsx-props-no-spreading": 0,
+    "import/extensions": ["error", "always", {"js": "never", "mjs": "never"}],
+    "jsx-a11y/label-has-for": [ 2, {
+      "required": {
+        "some": [ "nesting", "id" ]
+      },
+      "allowChildren": false
+    }],
+    "jsx-a11y/label-has-associated-control": [ 2, {
+      "controlComponents": ["Input"],
+      "depth": 3
+    }]
+  },
+  "overrides": [
+    {
+      "files": ["*.tsx", "*.ts", "*.jsx", "*.js"],
+      "processor": "@graphql-eslint/graphql"
+    },
+    {
+      "files": ["*.graphql"],
+      "parser": "@graphql-eslint/eslint-plugin",
+      "plugins": ["@graphql-eslint"],
+      "rules": {
+      }
+    }
+  ]
+}

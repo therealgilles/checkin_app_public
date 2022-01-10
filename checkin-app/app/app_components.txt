@@ -1,0 +1,27 @@
+To get all semantic-ui app components:
+
+> find src -type f -name '*.js' -not -path 'node_modules*' -exec grep 'semantic-ui-react' {} \; -print | grep import | perl -pe 's/^.*\{(.*)\}.*$/$1/; s/, / /g; s/^ //; s/ /\n/g' | sort | uniq
+
+Accordion
+Button
+Card
+Checkbox
+Confirm
+Form
+Grid
+Header
+Icon
+Input
+Item
+Label
+List
+Loader
+Menu
+Message
+Modal
+Popup
+Segment
+Sidebar
+Statistic
+Table
+Visibility
