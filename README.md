@@ -4,7 +4,7 @@
 
 - [Description](#description)
 - [Setup](#setup)
-- [ToDo](#todo)
+- [To Do](#to-do)
 - [Maintainers](#maintainers)
 - [Contributing](#contributing)
 - [License](#license)
@@ -112,12 +112,13 @@ Users as well as store products (classes, dances, and apparel) and orders inform
 
 ### How to do local development
 
-A local server for each website can be started using the following commands:
+You will need a self-signed SSL certificate to run the local server, [see below](#self-signed-ssl). A local server can be started using the following commands:
 
 ```shell
 cd checkin-app
 # launch the app for the WNH website
 SITE=wnh npm start
+## OR
 # launch the app for the SATS website
 SITE=sats npm start
 ```
@@ -133,7 +134,7 @@ They include a self-signed root certificate authority and a self-signed certific
 
 **IMPORTANT:** The self-signed root certificate authority needs to be added to the MacOS KeyChain Access application and set to 'Always Trust', in order for the browsers to accept it as a valid certificate authority.
 
-<details><summary><b>How to generate self-signed root certificate authority & self-signed certificate for the development server/app</b></summary>
+<details><summary><a id="self-signed-ssl"><b>How to generate self-signed root certificate authority & self-signed certificate for the development server/app</b></a></summary>
 
 ```shell
 cd server/src/keys
@@ -235,7 +236,7 @@ docker-compose -f docker-compose-production-ssr.wnh.yml up --build -d web-wnh re
 docker-compose -f docker-compose-production-ssr.sats.yml up --build -d web-sats
 ```
 
-## ToDo
+## To Do
 
 - [ ] Update the spdy package and re-enable http2.
 - [ ] Update Dockerfile node/npm versions.
@@ -256,5 +257,7 @@ This project uses [prettier](https://github.com/prettier/prettier) for code form
 ## License
 
 This repository is proprietary and property of Silicon Valley Swing Dance LLC.
+
+<br>
 
 [^1]: SSL certificates used to be handled directly from the app server with [Greenlock](https://github.com/coolaj86/greenlock) but the package functionality was broken by its author and it became unusable. Traces of Greenlock still remain in the code.
