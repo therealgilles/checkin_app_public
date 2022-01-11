@@ -253,6 +253,7 @@ This project does not accept any contributions at this time.
 ### Code Formatting
 
 This project uses [prettier](https://github.com/prettier/prettier) for code formatting.
+[ESLint](https://eslint.org/) is run automatically on git commit through [husky](https://github.com/typicode/husky) using [lint-staged](https://github.com/okonet/lint-staged).
 
 ## License
 

@@ -163,7 +163,7 @@ module.exports = {
     //     // folder in a css file in the styles folder the relative path is ../images/image-file.ext
     //     options: { name: 'images/[name].[hash].[ext]', publicPath: '../' },
     //   },
-
+    //
     //   // Loader configuration for font files
     //   {
     //     test: /\.(woff2?|[ot]tf|eot|svg)$/i,
@@ -209,7 +209,13 @@ module.exports = {
       '^ServerSrcv/(.*)$': ['<rootDir>/server/src/$1'],
       '^Config/(.*)$': ['<rootDir>/config/$1'],
     }
-    if (testTarget === 'server') jestConfig.moduleFileExtensions.push('mjs')
+
+    if (testTarget === 'app') jestConfig.setupFilesAfterEnv = ['<rootDir>/app/src/setupTests.js']
+    if (testTarget === 'server') {
+      jestConfig.moduleFileExtensions.push('mjs')
+      process.env.NODE_OPTIONS = '--experimental-vm-modules'
+    }
+
     jestConfig.testEnvironment = testTarget === 'app' ? 'jsdom' : 'node'
     jestConfig.testMatch = undefined
     jestConfig.testRegex =
