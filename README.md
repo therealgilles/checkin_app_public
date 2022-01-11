@@ -13,7 +13,7 @@
 
 ### Summary
 
-This is an attendance check-in application linked to the [Wednesday Night HOP (WNH)](https://wednesdaynighthop.com) and [Swingin' at the Savoy (SATS)](https://swinginatthesavoy.com) websites. It is used by the front desk staff to check people in as they come in to the venue.
+This is an attendance check-in application linked to the [Wednesday Night Hop (WNH)](https://wednesdaynighthop.com) and [Swingin' at the Savoy (SATS)](https://swinginatthesavoy.com) websites. It is used by the front desk staff to check people in as they come in to the venue.
 
 The applications run at:
 
