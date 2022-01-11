@@ -71,6 +71,8 @@ The app server is run in http mode (not https) behind the reverse proxy as OLS d
 
 ### Install
 
+This repo can be built with npm v8.1.0 and node v16.13.0. The Dockerfile uses node v15.8.0 and npm v7.5.3.
+
 ```shell
 git clone git@github.com:therealgilles/checkin_app_public.git
 cd checkin-app
