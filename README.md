@@ -261,4 +261,4 @@ This repository is proprietary and property of Silicon Valley Swing Dance LLC.
 
 <br>
 
-[^1]: SSL certificates used to be handled directly from the app server with [Greenlock](https://github.com/coolaj86/greenlock) but the package functionality was broken by its author and it became unusable. Traces of Greenlock still remain in the code.
+[^1]: SSL certificates used to be handled directly from the app server with [Greenlock](https://github.com/coolaj86/greenlock) but the package functionality was changed by its author. Traces of Greenlock still remain in the code.
