@@ -4,8 +4,8 @@
   "description": "Checkin App",
   "private": true,
   "scripts": {
-    "start": "trap 'sleep 2 && echo \" \"; exit' SIGINT; if [ ! -z ${SITE+x} ]; then cp app/public/favicon.${SITE}.ico ./public/favicon.ico && cp config/config.${SITE}.mjs config/config.mjs ; fi && razzle start",
-    "start_notrap": "if [ ! -z ${SITE+x} ]; then cp app/public/favicon.${SITE}.ico ./public/favicon.ico && cp config/config.${SITE}.mjs config/config.mjs ; fi && razzle start",
+    "start": "trap 'sleep 2 && echo \" \"; exit' SIGINT; if [ ! -z ${SITE+x} ]; then mkdir -p ./public && cp app/public/favicon.${SITE}.ico ./public/favicon.ico && cp config/config.${SITE}.mjs config/config.mjs ; fi && razzle start",
+    "start_notrap": "if [ ! -z ${SITE+x} ]; then mkdir -p ./public && cp app/public/favicon.${SITE}.ico ./public/favicon.ico && cp config/config.${SITE}.mjs config/config.mjs ; fi && razzle start",
     "build": "razzle build",
     "razzle-test:app": "TEST_TARGET=app razzle test",
     "razzle-test:server": "TEST_TARGET=server razzle test",

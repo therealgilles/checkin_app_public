@@ -29,7 +29,8 @@ cache/
 */config/config.sats.mjs
 
 # favicon
-*/public/favicon.ico
+**/public/favicon.ico
+**/public/favicon.*.ico
 
 # tokens/credentials
 *token.json
